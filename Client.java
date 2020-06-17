@@ -100,7 +100,7 @@ class Client {
 		    	
 	    	    //decide receipient and send stores info in message object ecrpyted 
 		    	System.out.println("Who to?");
-			    String Recipient = scan.nextLine();
+				String Recipient = scan.nextLine();
 			    System.out.println("Type your message: ");
 			    String Message = scan.nextLine();
 			    String toEncrpyt = userId + "\n" + Message;	
