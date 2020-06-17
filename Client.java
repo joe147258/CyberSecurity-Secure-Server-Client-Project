@@ -99,11 +99,11 @@ class Client {
 		    	SecretKey secretKey = kgen.generateKey();
 		    	
 	    	    //decide receipient and send stores info in message object ecrpyted 
-		    	System.out.println("Who to?");
+				System.out.println("Who to?");
 				String Recipient = scan.nextLine();
-			    System.out.println("Type your message: ");
-			    String Message = scan.nextLine();
-			    String toEncrpyt = userId + "\n" + Message;	
+				System.out.println("Type your message: ");
+				String Message = scan.nextLine();
+				String toEncrpyt = userId + "\n" + Message;	
 			    
 		    	Message m = new Message();
 		    	m.recipientHash = genSHA256(Recipient); //sha256 of recipient
